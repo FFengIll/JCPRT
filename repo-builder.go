@@ -107,21 +107,6 @@ type PluginRelease struct {
 	Modules []interface{} `json:"modules"`
 }
 
-type ReleaseDTO struct {
-	ID      int    `json:"id"`
-	File    string `json:"file"`
-	Since   string `json:"since"`
-	Until   string `json:"until"`
-	Version string `json:"version"`
-}
-
-type PluginDTO struct {
-	ID      int        `json:"id"`
-	Name    string     `json:"name"`
-	XMLID   string     `json:"xmlId"`
-	Release ReleaseDTO `json:"releases"`
-}
-
 type Config struct {
 	ServerUrl string   `yaml:"serverUrl"`
 	BindIp    string   `yaml:"bindIp"`
